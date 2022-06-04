@@ -1,26 +1,14 @@
 import { defineConfig } from 'vite';
-// import reactPlugin from '@vitejs/plugin-react';
-
-const libName = 'identityFactory';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
-  plugins: [
-    // reactPlugin(),
-  ],
+  plugins: [dts()],
   build: {
     lib: {
-      entry: `./src/${libName}.ts`,
-      name: libName,
-      fileName: (format) => `${libName}.${format}.js`,
-    },
-    rollupOptions: {
-      // NOTE: external dependencies to ignore from library
-      // external: ['react'],
-      // output: {
-      //   globals: {
-      //     react: 'React',
-      //   },
-      // },
+      entry: './src/index.ts',
+      name: 'index',
+      formats: ['es', 'cjs'],
+      fileName: (format) => `index.${format}.js`,
     },
   },
 });
