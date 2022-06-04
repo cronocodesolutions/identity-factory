@@ -1,0 +1,40 @@
+{
+  "name": "@cronocode/identity-factory",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/identity-factory.umd.js",
+  "module": "./dist/identity-factory.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/identity-factory.es.js",
+      "require": "./dist/identity-factory.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cronocodesolutions/identity-factory.git"
+  },
+  "keywords": [
+    "react",
+    "box"
+  ],
+  "author": "Maxim Procopenco",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/cronocodesolutions/identity-factory/issues"
+  },
+  "homepage": "https://github.com/cronocodesolutions/identity-factory#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^17.0.39",
+    "prettier": "^2.6.2",
+    "typescript": "^4.7.3",
+    "vite": "^2.9.9"
+  }
+}
