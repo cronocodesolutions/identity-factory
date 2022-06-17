@@ -22,8 +22,7 @@
     "url": "git+https://github.com/cronocodesolutions/identity-factory.git"
   },
   "keywords": [
-    "react",
-    "box"
+    "react"
   ],
   "author": "Maxim Procopenco",
   "license": "",
